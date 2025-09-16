@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@keyframes border-line {
+    0% {
+      border-color: transparent transparent red transparent;
+    }
+    25% {
+      border-color: transparent red red transparent;
+    }
+    50% {
+      border-color: transparent red transparent transparent;
+    }
+    75% {
+      border-color: red transparent transparent transparent;
+    }
+    100% {
+      border-color: transparent transparent red transparent;
+    }
+  }
+  
+  .group-hover:animate-border-line {
+    animation: border-line 2s linear infinite;
+  }
+  

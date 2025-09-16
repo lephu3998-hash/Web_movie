@@ -1,0 +1,111 @@
+/* Định nghĩa hiệu ứng viền sáng chạy xung quanh */
+@keyframes borderRun {
+  0% {
+    border-top: 4px solid #ffcc00;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+  }
+  25% {
+    border-top: 4px solid transparent;
+    border-right: 4px solid #ffcc00;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+  }
+  50% {
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid #ffcc00;
+    border-left: 4px solid transparent;
+  }
+  75% {
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #ffcc00;
+  }
+  100% {
+    border-top: 4px solid #ffcc00;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+  }
+}
+
+/* Viền sáng chạy xung quanh khi hover */
+.group:hover .group-hover\:animate-borderRun {
+  animation: borderRun 1.5s linear infinite;
+}
+
+/* Lớp bao quanh poster */
+.group {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Thêm hiệu ứng mờ cho lớp phủ */
+.group:hover .bg-black/60 {
+  opacity: 0.8; /* Làm lớp phủ mờ đi khi hover */
+}
+
+/* Lớp phủ hiệu ứng khi di chuột */
+.group:hover .bg-black/60 {
+  opacity: 0.6; /* Thêm mờ khi hover */
+}
+
+/* Thêm hiệu ứng cho biểu tượng tạm dừng */
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+/* Lớp phủ mờ */
+.group:hover .bg-black/60 {
+  opacity: 0.8; /* Làm lớp phủ mờ đi khi hover */
+}
+
+/* Cải tiến viền sáng chạy xung quanh khi hover */
+.group:hover .animate-borderRun {
+  animation: borderRun 1.5s linear infinite;
+}
+
+/* Thêm hiệu ứng bóng đổ và làm chữ nổi bật */
+.group .relative h3 {
+  font-size: 18px; /* Cải thiện kích thước chữ */
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Thêm bóng đổ cho chữ */
+  color: #ffffff; /* Chữ màu trắng */
+  text-transform: uppercase; /* Chữ hoa */
+  letter-spacing: 1px; /* Tăng khoảng cách giữa các chữ */
+  z-index: 20; /* Đảm bảo chữ hiển thị lên trên các lớp khác */
+}
+
+/* Cải tiến vị trí và căn chỉnh chữ */
+.group .relative h3 {
+  position: relative;
+  top: auto; /* Đảm bảo vị trí chữ không bị đẩy xuống quá nhiều */
+  margin-bottom: 10px; /* Thêm khoảng cách dưới chữ */
+}
+
+/* Tối ưu hiệu ứng khi hover vào poster */
+.group:hover .relative h3 {
+  color: #ffcc00; /* Đổi màu chữ khi hover vào poster */
+  transition: color 0.3s ease-in-out;
+}
+/* Tag "Nổi bật" ở góc trên trái */
+.absolute.top-0.left-0.bg-red-600.text-white.text-xs.font-bold.py-1.px-2.rounded-br-lg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff0000; /* Màu nền đỏ */
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 10; /* Đảm bảo tag "Nổi bật" nằm trên poster */
+}
+
+/* Hiệu ứng cho text khi hover */
+.group:hover .absolute.top-0.left-0.bg-red-600.text-white.text-xs.font-bold.py-1.px-2.rounded-br-lg {
+  background-color: #ffcc00; /* Màu nền đổi khi hover */
+}

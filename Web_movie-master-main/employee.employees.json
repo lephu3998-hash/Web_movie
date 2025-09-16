@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "6751908e36fef3c9f0b5c549"
+  },
+  "name": "Tuan Quynh",
+  "email": "test@gmail.com",
+  "password": "123",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756482262bd56b6bca6934a"
+  },
+  "name": "Ngoc Lam",
+  "email": "ngoclam@gmail.com",
+  "password": "123",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67610b8e3681fac687aeda29"
+  },
+  "name": "Nguyen Van A",
+  "email": "nguyenvana@gmail.com",
+  "password": "123456",
+  "__v": 0
+}]

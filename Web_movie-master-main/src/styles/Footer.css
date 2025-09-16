@@ -1,0 +1,61 @@
+footer {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  footer a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    color: #f87171; /* Accent red */
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  footer .social-media a:hover {
+    color: #ffffff;
+    transform: scale(1.1) rotate(10deg);
+  }
+  
+  /* Điều chỉnh kích thước biểu tượng mạng xã hội */
+  footer .social-media a {
+    font-size: 1.5rem; /* Kích thước nhỏ hơn */
+  }
+  
+  /* Các đường kẻ ngang nhỏ giữa các phần */
+  footer .border-t {
+    border-top: 1px solid #555; /* Đường kẻ ngang mỏng màu xám */
+    margin-bottom: 8px; /* Khoảng cách dưới đường kẻ */
+  }
+  
+  /* Điều chỉnh logo */
+  footer .logo img {
+    max-height: 30px; /* Giảm kích thước logo */
+    object-fit: contain;
+  }
+  
+  /* Các đường viền */
+  footer a:hover {
+    color: #f87171;
+    transform: scale(1.05);
+  }
+  
+  /* Điều chỉnh khoảng cách giữa các phần */
+  footer .container {
+    padding-bottom: 16px;
+    padding-top: 16px; /* Giảm khoảng cách trên và dưới */
+  }
+  
+  /* Tạo sự thích ứng tốt cho di động */
+  @media screen and (max-width: 640px) {
+    footer .flex {
+      flex-direction: column;
+    }
+  
+    footer .social-media a {
+      font-size: 1.4rem;
+    }
+  }
+  
